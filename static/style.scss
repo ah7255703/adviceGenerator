@@ -22,7 +22,6 @@ body {
   width: 100%;
   height: var(--view-height);
   display: flex;
-
   justify-content: center;
   align-items: center;
   background: var(--body-clr);
@@ -39,8 +38,8 @@ footer {
 // card Design
 
 .card {
-  width: 400px;
-  height: 250px;
+  width: 500px;
+  height: 350px;
   background-color: var(--dark-grayish-blue);
   border-radius: 20px;
   display: flex;
