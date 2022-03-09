@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope";
+}
+
+:root {
+  --body-clr: hsl(218, 23%, 16%);
+  --light-cyan: hsl(193, 38%, 86%);
+  --Neon-green: hsl(150, 100%, 66%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --view-height: 95vh;
+}
+
+.view {
+  width: 100%;
+  height: var(--view-height);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--body-clr);
+}
+
+footer {
+  width: 100%;
+  height: calc(100vh - var(--view-height));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 400px;
+  height: 250px;
+  background-color: var(--dark-grayish-blue);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-shadow: 0 0 15px rgba(15, 17, 21, 0.767);
+          box-shadow: 0 0 15px rgba(15, 17, 21, 0.767);
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--Neon-green);
+  border-radius: 50%;
+  -webkit-transition: 0.5s ease-in-out box-shadow;
+  transition: 0.5s ease-in-out box-shadow;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: -20px;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0 0 15px 1px var(--Neon-green);
+          box-shadow: 0 0 15px 1px var(--Neon-green);
+}
+
+.button img {
+  width: 45%;
+}
+
+.breaker {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 60px;
+}
+
+.breaker img {
+  width: 100%;
+}
+
+.advice-id {
+  color: var(--Neon-green);
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+.advice-id:first-child {
+  letter-spacing: 3px;
+}
+
+#advice-content {
+  color: var(--light-cyan);
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.3;
+  white-space: pre-line;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  padding: 0 10px;
+}
+
+#advice-content::before {
+  content: open-quote;
+  font-size: 18px;
+}
+
+#advice-content::after {
+  content: close-quote;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 415px) {
+  .card {
+    width: 90%;
+    height: 250px;
+  }
+  .advice-id {
+    margin: 15px 5px 0 0;
+    font-size: 10px;
+  }
+  .advice-id:first-child {
+    letter-spacing: 2px;
+  }
+  #advice-content {
+    line-height: 1.2;
+    white-space: pre-line;
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+  .breaker {
+    width: 90%;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
