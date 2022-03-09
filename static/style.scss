@@ -9,6 +9,10 @@ body {
   font-family: "Manrope";
 }
 
+a {
+  text-decoration: none;
+  color: green;
+}
 :root {
   // clrs
   --body-clr: hsl(218, 23%, 16%);
@@ -31,15 +35,20 @@ footer {
   width: 100%;
   height: calc(100vh - var(--view-height));
   display: flex;
+  background: var(--body-clr);
   justify-content: center;
   align-items: center;
+  color: white;
+  a {
+    margin: 0 10px;
+  }
 }
 
 // card Design
 
 .card {
-  width: 500px;
-  height: 350px;
+  width: 450px;
+  height: 250px;
   background-color: var(--dark-grayish-blue);
   border-radius: 20px;
   display: flex;

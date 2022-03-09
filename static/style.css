@@ -10,6 +10,11 @@ body {
   font-family: "Manrope";
 }
 
+a {
+  text-decoration: none;
+  color: green;
+}
+
 :root {
   --body-clr: hsl(218, 23%, 16%);
   --light-cyan: hsl(193, 38%, 86%);
@@ -39,16 +44,22 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: var(--body-clr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+}
+
+footer a {
+  margin: 0 10px;
 }
 
 .card {
-  width: 400px;
+  width: 450px;
   height: 250px;
   background-color: var(--dark-grayish-blue);
   border-radius: 20px;
